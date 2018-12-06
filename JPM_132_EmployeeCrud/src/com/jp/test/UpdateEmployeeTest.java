@@ -34,7 +34,7 @@ private static IEmployeeService employeeService;
 		Employee emp = employeeService.updateEmployee(employee);
 		
 		Assert.assertTrue("Employee not updated", emp.getSalary()==5000.00);
-		Assert.assertTrue("Employee not updated", emp.getName().equals("Amit"));
+		Assert.assertTrue("Employee not updated", emp.getName().equalsIgnoreCase("Amit"));
 	}
 
 }

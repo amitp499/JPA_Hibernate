@@ -1,5 +1,7 @@
 package com.jp.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,9 +11,13 @@ import javax.persistence.Table;
 
 @Entity  //tells JPA that this class object needs to be persistent
 @Table(name="emp_master")  // tells hibernate that this class object need to be mapped to the table
-public class Employee {
+public class Employee implements Serializable{
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4272455486153858712L;
 	@Id //primary key
 	//@GeneratedValue(strategy=GenerationType.AUTO)  //creates a sequence and assigns the value to employeeid
 	//@GeneratedValue(strategy=GenerationType.TABLE)  //creates a sequence and assigns the value to employeeid

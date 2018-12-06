@@ -25,9 +25,7 @@ public class EmployeeDAO implements IEmployeeDAO{
 			
 			
 			entityManager.persist(employee);
-			
-			
-			
+									
 			return employee.getEmployeeId();
 			
 			
@@ -53,7 +51,7 @@ public class EmployeeDAO implements IEmployeeDAO{
 		
 		
 		
-		//employee.setName;
+		//employee.setName("amit");
 		
 		//employee.setSalary(5000.00);
 				
